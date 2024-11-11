@@ -2,7 +2,7 @@ nilai_mahasiswa = []
 
 while True:
     print("\nMenu:")
-    print("1. Tambahkan data ilai mahasiswa")
+    print("1. Tambahkan data nilai mahasiswa")
     print("2. Tampilkan semua data nilai mahasiswa")
     print("3. Tampilkan data nilai mahasiswa yang memiliki nilai tertinggi")
     print("4. Keluar")

@@ -1,18 +1,9 @@
-def cari_kelipatan(data_array, kelipatan):
-        kelipatan_list = []
-        for elemen in data_array:
-                if elemen % kelipatan == 0:
-                        kelipatan_list.append(elemen)
-        return kelipatan_list
-
 jumlah_data = int(input("Masukkan jumlah elemen dalam array: "))
-data_array = []
+data_array = list(range(1, jumlah_data + 1))
 
-for i in range(jumlah_data):
-        elemen = float(input(f"Masukkan elemen ke-{i+1}: "))
-        data_array.append(elemen)
+print("Data Array:", data_array)
 
 kelipatan = int(input("Masukkan kelipatan yang ingin ditampilkan: "))
-hasil = cari_kelipatan(data_array, kelipatan)
+kelipatan_list = [elemen for elemen in data_array if elemen % kelipatan == 0]
 
-print("Elemen yang merupakan kelipatan dari", kelipatan, "adalah:", hasil)
+print("Elemen yang merupakan kelipatan dari", kelipatan, ":", kelipatan_list)
